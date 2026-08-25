@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Elderkin IT provides Microsoft 365 administration and reliable IT support for small businesses.">
+<title>Elderkin IT | Small Business IT Support</title>
+<style>
+:root{
+  --navy:#03142d;--navy2:#061a38;--panel:#082147;--blue:#0b63e5;--blue2:#2676f3;
+  --text:#eef5ff;--muted:#9db0ca;--line:rgba(133,169,220,.18);--max:1160px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;color:var(--text);line-height:1.6;
+background:radial-gradient(circle at 82% 8%,rgba(11,99,229,.28),transparent 30%),linear-gradient(180deg,var(--navy),var(--navy2) 45%,#041226)}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(3,20,45,.84);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand img{display:block;width:180px;max-width:42vw;height:auto}
+nav{display:flex;gap:24px;align-items:center;color:#b9c8dc;font-size:.95rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:12px;font-weight:700;border:1px solid rgba(107,157,235,.28)}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue2));border-color:transparent;box-shadow:0 12px 30px rgba(11,99,229,.22)}
+.btn-secondary{background:rgba(255,255,255,.035)}
+.hero{padding:92px 0 82px;display:grid;grid-template-columns:1.1fr .9fr;gap:58px;align-items:center}
+.hero-logo{width:min(500px,100%);display:block;margin-bottom:28px;filter:drop-shadow(0 18px 50px rgba(0,83,255,.24))}
+.eyebrow{display:inline-flex;padding:7px 11px;border:1px solid rgba(66,129,232,.28);color:#a8c6f8;background:rgba(25,97,212,.08);border-radius:999px;font-size:.78rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+h1{margin:18px 0;font-size:clamp(2.6rem,6vw,5.2rem);line-height:1.01;letter-spacing:-.052em}
+.lead{max-width:680px;color:var(--muted);font-size:1.16rem;margin-bottom:28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.status-card{border-radius:28px;padding:30px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(10,41,86,.96),rgba(5,22,47,.96));box-shadow:0 24px 70px rgba(0,17,50,.35)}
+.status-title{color:#8ea8c8;text-transform:uppercase;letter-spacing:.12em;font-size:.73rem;margin-bottom:16px}
+.status-list{display:grid;gap:12px}.status-item{display:flex;justify-content:space-between;gap:16px;padding:15px 16px;border:1px solid rgba(145,177,220,.14);background:rgba(255,255,255,.025);border-radius:14px}
+.status-item span:last-child{color:#74a8ff;font-weight:800}
+section{padding:72px 0}.section-head{max-width:720px;margin-bottom:34px}h2{margin:12px 0;font-size:clamp(2rem,4vw,3.1rem);line-height:1.08;letter-spacing:-.04em}.section-head p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{min-height:235px;padding:24px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(8,34,72,.86),rgba(5,25,54,.88))}
+.card-icon{width:46px;height:46px;margin-bottom:18px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,rgba(11,99,229,.24),rgba(38,118,243,.10));border:1px solid rgba(104,157,241,.22);color:#8db8ff;font-weight:900}
+.card h3{margin:0 0 10px}.card p{color:var(--muted);margin:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.panel{padding:28px;border-radius:22px;border:1px solid var(--line);background:rgba(7,29,62,.8)}.checks{display:grid;gap:14px;margin-top:20px}.check{display:flex;gap:12px;color:var(--muted)}
+.tick{width:22px;height:22px;flex:0 0 auto;display:grid;place-items:center;border-radius:7px;background:var(--blue);color:white;font-size:.78rem;font-weight:900}
+.cta{margin:62px 0 92px;padding:42px;display:flex;justify-content:space-between;gap:28px;align-items:center;border-radius:26px;border:1px solid rgba(84,143,238,.28);background:linear-gradient(135deg,rgba(7,44,94,.92),rgba(6,26,58,.96))}
+.cta p{margin-bottom:0;color:var(--muted);max-width:680px}footer{border-top:1px solid var(--line);padding:26px 0 38px;color:#8096b3;font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.footer-logo{width:140px;height:auto;opacity:.82}
+@media(max-width:900px){.hero,.split{grid-template-columns:1fr}.grid{grid-template-columns:1fr}nav a:not(.btn){display:none}.hero{padding-top:62px}}
+@media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 24px))}.brand img{width:145px}.hero-actions .btn{width:100%}.cta{flex-direction:column;align-items:flex-start;padding:28px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="elderkin-logo.png" alt="Elderkin IT"></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why">Why Elderkin IT</a>
+      <a href="#contact" class="btn btn-primary">Get IT support</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <img class="hero-logo" src="elderkin-logo.png" alt="Elderkin IT">
+      <span class="eyebrow">IT support for small businesses</span>
+      <h1>Reliable IT support, without the enterprise overhead.</h1>
+      <p class="lead">Elderkin IT supports small businesses with Microsoft 365, user accounts, email, computers, domains and everyday technical problems.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Talk to Elderkin IT</a>
+        <a class="btn btn-secondary" href="#services">View services</a>
+      </div>
+    </div>
+    <aside class="status-card">
+      <div class="status-title">Business IT overview</div>
+      <div class="status-list">
+        <div class="status-item"><span>Microsoft 365</span><span>Managed</span></div>
+        <div class="status-item"><span>Email & accounts</span><span>Supported</span></div>
+        <div class="status-item"><span>Endpoints</span><span>Covered</span></div>
+        <div class="status-item"><span>Day-to-day support</span><span>Available</span></div>
+      </div>
+    </aside>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2>The IT support small businesses actually use.</h2>
+        <p>Practical support for the systems your staff rely on every day, without needing a full-time internal IT department.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="card-icon">365</div><h3>Microsoft 365</h3><p>Tenant administration, Exchange Online, licences, Teams, OneDrive, SharePoint, MFA and troubleshooting.</p></article>
+        <article class="card"><div class="card-icon">@</div><h3>Email & Accounts</h3><p>Outlook issues, mail flow, shared mailboxes, onboarding, offboarding, access and password problems.</p></article>
+        <article class="card"><div class="card-icon">PC</div><h3>Hardware & Windows</h3><p>PC issues, software problems, printers, peripherals, slow machines and day-to-day troubleshooting.</p></article>
+        <article class="card"><div class="card-icon">DNS</div><h3>Domains & DNS</h3><p>DNS changes, domain renewals, MX records and support with SPF, DKIM and DMARC.</p></article>
+        <article class="card"><div class="card-icon">Wi</div><h3>Connectivity</h3><p>Wi-Fi, routers and small-office network issues that get in the way of normal work.</p></article>
+        <article class="card"><div class="card-icon">✓</div><h3>Ongoing Support</h3><p>A dependable IT contact for recurring admin, user requests and the inevitable problems that come up.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap split">
+      <div class="panel">
+        <span class="eyebrow">Small business focused</span>
+        <h2>Support that stays straightforward.</h2>
+        <p class="muted">Clear communication, practical solutions and support sized for smaller teams. No oversized enterprise process for a ten-person business.</p>
+      </div>
+      <div class="panel">
+        <h3 style="margin-top:0">A good fit if you...</h3>
+        <div class="checks">
+          <div class="check"><span class="tick">✓</span><span>Use Microsoft 365 but do not have dedicated internal IT staff.</span></div>
+          <div class="check"><span class="tick">✓</span><span>Need reliable help with users, email and computers.</span></div>
+          <div class="check"><span class="tick">✓</span><span>Want one technical contact who gets to know your environment.</span></div>
+          <div class="check"><span class="tick">✓</span><span>Need ongoing support without employing a full-time sysadmin.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="cta" id="contact">
+      <div>
+        <h2>Need someone to take care of your IT?</h2>
+        <p>Get in touch and tell Elderkin IT what your business uses today. We can start with a simple conversation about the support you actually need.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:YOUR-EMAIL-HERE">Contact Elderkin IT</a>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <img class="footer-logo" src="elderkin-logo.png" alt="Elderkin IT">
+    <span>© <span id="year"></span> Elderkin IT.</span>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
